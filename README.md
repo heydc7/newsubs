@@ -15,9 +15,9 @@ Usage: newsubs [-f] <file> [-s] <file> [-o] <filename>
 
 ## Install
 ```
-git clone https://github.com/heydc7/magnify.git
-cd magnify/
-python3 main.py -u https://google.com
+git clone https://github.com/heydc7/newsubs.git
+cd newsubs/
+python3 main.py -f first.txt -s second.txt
 ```
 
 ## Example
