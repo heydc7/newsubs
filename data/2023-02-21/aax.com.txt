@@ -1,0 +1,17 @@
+*.aax.com
+academy.aax.com
+bachlechner.co.aax.com
+blog.aax.com
+deltix.aax.com
+email.ma.aax.com
+email.mg.aax.com
+idcdn.aax.com
+mail.aax.com
+mcdn.aax.com
+mdcdn.aax.com
+novalab-io.aax.com
+testnet.aax.com
+tlt-cust-129-122-203-76.zapfibra.co.aax.com
+trends.aax.com
+trends-svc.aax.com
+www.aax.com

@@ -1,0 +1,8 @@
+admin.cloudkarafka.com
+api.cloudkarafka.com
+customer.cloudkarafka.com
+docs.cloudkarafka.com
+manager.cloudkarafka.com
+status.cloudkarafka.com
+www.cloudkarafka.com
+www.api.cloudkarafka.com
