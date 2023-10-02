@@ -140,7 +140,7 @@ def main():
     fetchChaos()
 
     # PARSE
-    parser = argparse.ArgumentParser(description="Fetch & compare to get new subdomains")
+    parser = argparse.ArgumentParser(description="Find new subdomains")
     subparser = parser.add_subparsers(dest='command')
     
     # SECTIONS
