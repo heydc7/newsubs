@@ -1,0 +1,10 @@
+customer.cloudmqtt.com
+test.com
+m21.cloudmqtt.com
+*.cloudmqtt.com
+true-chef.cloudmqtt.com
+docs.cloudmqtt.com
+www.cloudmqtt.com
+fancy-waiter.cloudmqtt.com
+apple.com
+google.com
