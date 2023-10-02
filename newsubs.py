@@ -78,11 +78,20 @@ def fetchChaos():
     for d in data:
         programs.append(Program.from_json(d))
 
-def showPrograms(outputFile=None):
-    for i in range(len(programs)):
-        print(str(i) + ". " + programs[i].name)
+def showPrograms(grep=None, outputFile=None):
+    result = []
+    if grep != None:
+        for i in range(len(programs)):
+            name = programs[i].name.lower()
+            if grep in name:
+                print(str(i) + ". " + name)
+                result.append(name)
+    else:
+        for i in range(len(programs)):
+            print(str(i) + ". " + programs[i].name)
+            result.append(programs[i].name)
     if outputFile != None:
-        writeFile(outputFile, programs)
+        writeFile(outputFile, result)
 
 def compareProgram(name, date1, date2, outputFile=None):
     outputResult = set()
@@ -167,6 +176,7 @@ def main():
     uni.add_argument('-o', '--output', type=str, help='Output file name/path')
 
     # SHOW PARSER
+    show.add_argument('-g', '--grep', type=str, help='Filter programs using grep')
     show.add_argument('-o', '--output', type=str, help='Output file name/path')
 
     # FETCH PARSE
@@ -176,7 +186,7 @@ def main():
 
     match args.command:
         case 'show':
-            showPrograms(args.output)
+            showPrograms(args.grep, args.output)
         case 'fetch':
             fetchSubdomains(args.index)
         case 'compare':
