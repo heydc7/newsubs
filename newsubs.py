@@ -41,10 +41,7 @@ def writeCompareFile(program, file, result):
 
 def writeFile(file, result):
     try:
-        newPath = 'data/' + program + '/results'
-        if not os.path.exists(newPath):
-            os.makedirs(newPath)
-        f = open(newPath + '/' + str(today) + '-' + file, "w")
+        f = open(file,"w")
         f.writelines(list(map(convertResult, result)))
         f.close()
         print("\nResults saved: " + file)
@@ -59,8 +56,7 @@ def downloadFile(url, path):
       output_file.write(req.content)
     return filename
   except Exception as e:
-    print(e)
-    print(f"Failed to download: {url}")
+    print("Failed to download: " + url + "\n Error: " + e)
 
 def unZip(path, file):
     try:
