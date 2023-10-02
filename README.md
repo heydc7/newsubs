@@ -32,13 +32,13 @@ options:
 ### Commands
 "newsubs" offers several commands to assist in subdomain discovery. Here's an overview of the available commands:
 
-**1. Command Help**
+##### 1. Command Help
 
 ```bash
 newsubs.py <command> -h
 ```
 
-**2. Show**
+##### 2. Show
 
 The show command displays a list of all Bug Bounty programs available on [Chaos](https://chaos.projectdiscovery.io/#/). You can optionally filter the programs using the -g flag and save the output to a file using the -o flag:
 
@@ -56,7 +56,7 @@ For example, to find programs related to Sony, you can use:
 newsubs.py show -g sony
 ```
 
-**3. Fetch**
+##### 3. Fetch
 
 The fetch command downloads subdomains associated with a specific Bug Bounty program from [Chaos](https://chaos.projectdiscovery.io/#/). You'll need to provide the index number of the program using the `-i` flag:
 
@@ -74,7 +74,7 @@ This command will create a new directory for the program within the data/ folder
 newsubs.py fetch -i 608
 ```
 
-**4. Compare**
+##### 4. Compare
 
 The compare command helps you compare different versions of subdomain folders fetched for a program. It identifies and displays new subdomains between two versions:
 
@@ -95,7 +95,7 @@ For example, to compare archived versions of the "Sony" program fetched on diffe
 newsubs.py compare -p sony -f1 2023-09-25 -f2 2023-09-28
 ```
 
-**5. Difference**
+##### 5. Difference
 
 The difference command is used to find uncommon items (subdomains) between two files:
 
@@ -115,7 +115,7 @@ This command can be handy when performing subdomain recon to identify changes be
 newsubs.py difference -f1 amass.txt -f2 subfinder.txt
 ```
 
-**6. Union**
+##### 6. Union
 
 The union command combines the contents of two files into a single file, retaining unique values:
 
